@@ -26,6 +26,7 @@ public class Main {
       } else {
         System.out.println("Tails");
         totalFlips++;
+        heads = 0;
       }
     } while (heads < n);
     System.out.println("It took " + totalFlips + " flips to flip " + n + " heads in a row");
