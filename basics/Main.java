@@ -33,15 +33,12 @@ public class Main {
   }
 
   public static void clock(){
+    LocalDateTime now = LocalDateTime.now();
     while(true){
-      LocalDateTime now = LocalDateTime.now();
-      String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-      System.out.println(time);
-      try{
-        Thread.sleep(1000);
-      } catch(InterruptedException ex) {
-        Thread.currentThread().interrupt();
-      }
+      if(now.getSecond() != LocalDateTime.now().getSecond()){
+        System.out.println(now.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+        now = LocalDateTime.now();
+      } 
     }
   }
 
