@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
 
@@ -29,10 +31,24 @@ public class Main {
     System.out.println("It took " + totalFlips + " flips to flip " + n + " heads in a row");
   }
 
+  public static void clock(){
+    while(true){
+      LocalDateTime now = LocalDateTime.now();
+      String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+      System.out.println(time);
+      try{
+        Thread.sleep(1000);
+      } catch(InterruptedException ex) {
+        Thread.currentThread().interrupt();
+      }
+    }
+  }
+
   public static void main(String[] args){
     pluarlize("dog", 0);
     pluarlize("cat", 1);
     pluarlize("turle", 2);
     flipNHeads(5);
+    clock();
   }
 }
