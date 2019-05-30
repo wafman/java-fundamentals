@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f6d2aa-e5d9-4cac-9a98-1e52cf9dc08d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/src/main/java/linter/lab3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/src/main/resources/gates.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/basicLibrary/lab2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/basicLibrary/lab2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test/basicLibrary/lab2_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/basicLibrary/lab2_test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/basicLibrary/lab2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/basicLibrary/lab2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicLibrary/lab2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/lab2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basicLibrary/lab2_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/lab2_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="-86">
+              <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,9 +65,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/basicLibrary/lab2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/basicLibrary/lab2_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java" />
+        <option value="$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java" />
       </list>
     </option>
   </component>
@@ -147,7 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559242199372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559244310545" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,24 +244,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lab2_test - 2019.05.29 at 12h 06m 07s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lab2_test - 2019.05.29 at 12h 07m 00s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lab2_test - 2019.05.29 at 12h 21m 11s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lab2_test - 2019.05.29 at 12h 31m 47s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lab2_test - 2019.05.29 at 12h 48m 23s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lab2_test - 2019.05.29 at 12h 52m 15s.xml">
-      <configuration name="lab2_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="lab3_test - 2019.05.30 at 10h 26m 48s.xml">
       <configuration name="lab3_test" configurationId="JUnit" />
     </history-entry>
@@ -275,6 +254,24 @@
       <configuration name="lab3_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="lab3_test - 2019.05.30 at 10h 45m 05s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 14m 27s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 14m 59s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 18m 14s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 19m 38s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 19m 42s.xml">
+      <configuration name="lab3_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lab3_test - 2019.05.30 at 12h 20m 18s.xml">
       <configuration name="lab3_test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -367,20 +364,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/gates.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/lab2_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="596">
           <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -389,8 +379,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/lab3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="-86">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/lab3_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
