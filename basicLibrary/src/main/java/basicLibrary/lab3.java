@@ -23,7 +23,7 @@ public class lab3 {
                 count++;
             }
         }
-        answer += answer.format("High: %d\n Low: %d\n", max, min);
+        answer += answer.format("High: %d\nLow: %d\n", max, min);
         for(int i = min; i < max; i++){
             if(!temps.contains(i)){
                 answer += answer.format("Never saw temperature: %d\n", i);
