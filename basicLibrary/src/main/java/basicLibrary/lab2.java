@@ -37,6 +37,7 @@ public class lab2 {
     }
 
     public double avgAverages(int[][] arr){
+
         double lowestAvg = 0;
         double[] output = new double[arr.length];
         for(int i = 0; i < output.length; i++){
