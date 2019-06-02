@@ -36,20 +36,16 @@ public class lab2 {
         return avg;
     }
 
-    public double avgAverages(int[][] arr){
-        double lowestAvg = 0;
-        double[] output = new double[arr.length];
-        for(int i = 0; i < output.length; i++){
-            if(i == 0){
-                output[i] = averages(arr[i]);
-                lowestAvg = output[i];
-            } else {
-                output[i] = averages(arr[i]);
-                if(lowestAvg > output[i]){
-                    lowestAvg = output[i];
-                }
+    public int[] avgAverages(int[][] arr){
+        int[] ans = arr[0];
+        double lowestAvg = averages(arr[0]);
+        for(int i = 0; i < arr.length; i++){
+            double currentAvg = averages(arr[i]);
+            if(currentAvg < lowestAvg){
+                lowestAvg = currentAvg;
+                ans = arr[i];
             }
         }
-        return lowestAvg;
+        return ans;
     }
 }
