@@ -1,7 +1,14 @@
-Java Fundamentals Lab Repository
+# Java Fundamentals Lab Repository
 
-1. Basics Directory
-  a. Main.java
-    aa. Pluarlize Function
-    ab. Coin Flip Function, using Java Random
-    ac. Clock Function, using Java LocalDateTime
+## Basics Directory
+- Main.java
+  - Pluarlize Function
+  - Coin Flip Function, using Java Random
+  - Clock Function, using Java LocalDateTime
+
+## Basic Library
+
+## Linter
+
+## Inheritance
+  - [inheritance](./inheritance/README.md)
