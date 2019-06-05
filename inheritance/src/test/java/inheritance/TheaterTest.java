@@ -109,4 +109,17 @@ public class TheaterTest {
         assertEquals("should return list of movies without Saw or The Exorcist", expectedOutput, theater.getMovies());
     }
 
+    @Test (expected = IllegalArgumentException.class)
+    public void testRemoveMovie_noMoviesPlaying(){
+        Theater theater = new Theater("Bonney Lake", 0, "$$");
+        theater.removeMovie("Saw");
+    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void testRemoveMovie_movieNotPlaying(){
+        Theater theater = new Theater("Bonney Lake", 0, "$$");
+        theater.addMovie("The Conjuring");
+        theater.removeMovie("Saw");
+    }
+
 }
