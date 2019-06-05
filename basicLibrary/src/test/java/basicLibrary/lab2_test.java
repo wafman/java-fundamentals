@@ -47,9 +47,9 @@ public class lab2_test {
                 {2,4,6,8,10},
                 {3,6,9,12,15}
         };
-        double expectedOutput = 3.0;
-        assertEquals("output should equal 3.0", expectedOutput,
-                classUnderTest.avgAverages(arr), 0);
+        int[] expectedOutput = new int[]{1,2,3,4,5};
+        assertArrayEquals("output should equal [1,2,3,4,5]", expectedOutput,
+                classUnderTest.avgAverages(arr));
     }
 
 }
