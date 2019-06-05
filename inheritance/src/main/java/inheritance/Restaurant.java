@@ -17,7 +17,7 @@ public class Restaurant {
         this.priceCategory = priceCategory;
         this.reviews = new ArrayList<>();
         this.totalReviews = 0;
-        this.totalStars = 5;
+        this.totalStars = 0;
     }
 
     public String getName(){
@@ -33,33 +33,19 @@ public class Restaurant {
         return stars;
     }
 
-    public String getPriceCategory() {
-        return priceCategory;
-    }
-
-    public ArrayList<Review> getReviews() {
-        return reviews;
-    }
-
-    public int getTotalReviews() {
-        return totalReviews;
-    }
 
     public void addReview(Review review){
-        if(review.getRestaurant() == this.name){
+        if(review.getRestaurant() == this){
             this.reviews.add(review);
             this.totalReviews = this.totalReviews + 1;
+            this.totalStars = this.totalStars + review.getRestaurantReviewStars();
+            this.stars = this.totalStars / this.totalReviews;
+//            if(this.stars >= 5 && this.totalReviews <= 1){
+//                this.stars = 5;
+//            }
 
-//            this.stars = (this.stars + review.getReviewStars()) / this.totalReviews;
-            if(this.stars >= 5 && this.totalReviews <= 1){
-                this.stars = 5;
-            } else {
-                this.totalStars = this.totalStars + review.getReviewStars();
-                this.stars = this.totalStars / this.totalReviews;
-//                int temp = this.stars + review.getReviewStars();
-//                int ans = temp / this.totalReviews;
-//                this.stars = ans;
-            }
+
+
         } else {
             System.out.println("Restaurant name does not match for review");
         }
