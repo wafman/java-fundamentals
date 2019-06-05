@@ -8,13 +8,15 @@ public class ReviewTest {
 
     @Test
     public void testConstructor(){
-        Review r = new Review("a great place to eat", "William", 3, "Red Robin");
+        Restaurant restaurant = new Restaurant("Red Robin", 5, "$$$");
+        Review r = new Review("a great place to eat", "William", 3, restaurant);
         assertEquals("should return the author's name", "William", r.getAuthor());
     }
 
     @Test
     public void testToString(){
-        Review r = new Review("a great place to eat", "William", 3, "Red Robin");
+        Restaurant restaurant = new Restaurant("Red Robin", 5, "$$$");
+        Review r = new Review("a great place to eat", "William", 3, restaurant);
         assertEquals("should return a string with author name, review body and stars rating",
                 "William says a great place to eat about Red Robin and gives 3 stars",
                 r.toString());

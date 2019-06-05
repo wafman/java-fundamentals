@@ -3,14 +3,45 @@ package inheritance;
 public class Review {
     private String author;
     private String body;
-    private int reviewStars;
-    private String restaurant;
+    private int restaurantReviewStars;
+    private int shopReviewStars;
+    private int theaterReviewStars;
+    private Restaurant restaurant;
+    private Shop shop;
+    private Theater theater;
+    private String movieName;
 
-    public Review(String body, String author, int reviewStars, String restaurant){
+    public Review(String body, String author, int restaurantReviewStars, Restaurant restaurant){
         this.body = body;
         this.author = author;
-        this.reviewStars = reviewStars;
+        this.restaurantReviewStars = restaurantReviewStars;
         this.restaurant = restaurant;
+        restaurant.addReview(this);
+    }
+
+    public Review(String body, String author, int shopReviewStars, Shop shop){
+        this.body = body;
+        this.author = author;
+        this.shopReviewStars = shopReviewStars;
+        this.shop = shop;
+        shop.addReview(this);
+    }
+
+    public Review(String body, String author, int theaterReviewStars, Theater theater, String movieName){
+        this.body = body;
+        this.author = author;
+        this.theaterReviewStars = theaterReviewStars;
+        this.theater = theater;
+        this.movieName = movieName;
+        theater.addReview(this);
+    }
+
+    public Review(String body, String author, int theaterReviewStars, Theater theater){
+        this.body = body;
+        this.author = author;
+        this.theaterReviewStars = theaterReviewStars;
+        this.theater = theater;
+        theater.addReview(this);
     }
 
     public String getAuthor(){
@@ -18,34 +49,30 @@ public class Review {
     }
 
     public String toString(){
-        return String.format("%s says %s about %s and gives %d stars", this.author, this.body, this.restaurant, this.reviewStars);
+        return String.format("%s says %s about %s and gives %d stars", this.author, this.body, restaurant.getName(), this.restaurantReviewStars);
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public int getRestaurantReviewStars() {
+        return restaurantReviewStars;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public int getShopReviewStars() {
+        return shopReviewStars;
     }
 
-    public void setStars(int reviewStars) {
-        this.reviewStars = reviewStars;
+    public int getTheaterReviewStars() {
+        return theaterReviewStars;
     }
 
-    public void setRestaurant(String restaurant) {
-        this.restaurant = restaurant;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public int getReviewStars() {
-        return reviewStars;
-    }
-
-    public String getRestaurant() {
+    public Restaurant getRestaurant() {
         return restaurant;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public Theater getTheater() {
+        return theater;
     }
 }
