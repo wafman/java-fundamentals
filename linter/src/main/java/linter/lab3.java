@@ -7,26 +7,32 @@ import java.util.Scanner;
 
 public class lab3 {
     public static void main(String[] args){
-        System.out.println(findErrors(lint("resources/gates.js"));
+        System.out.println(findErrors("src/main/resources/gates.js"));
     }
 
-    public static String findErrors(String path){
-        //path resources/gates.js
-        Scanner s = new Scanner(new File(path));
+    public static int findErrors(String path){
+        int numErrors = 0;
         String errorMessage = "";
-        while(s.hasNextLine()){
-            String line = s.nextLine();
-            //use locale() for line number
-            //use
-            if(!line.endsWith(";")){
-                if(line.endsWith("}") || line.endsWith("{") || line.contains("if") || line.contains("else") || line.length() == 0){
+        try{
+            Scanner s = new Scanner(new File(path));
+            int lineNum = 0;
+            while(s.hasNextLine()){
+                lineNum++;
+                String line = s.nextLine();
+                if(line.endsWith("}") || line.endsWith("{") || line.contains("if") || line.contains("else") || line.length() < 1){
                     continue;
-                } else {
-                    //use string builder instead
-                    errorMessage += String.format("Line %d: missing semi-colon.", s.locale());
+                } else if(!line.endsWith(";")) {
+                    numErrors++;
+                    errorMessage += String.format("Line %d: missing semi-colon.\n", lineNum);
                 }
+
             }
+        } catch(FileNotFoundException e){
+            numErrors = -1;
+            System.out.println("File was not found");
+            System.out.println(e);
         }
-        return errorMessage;
+        System.out.println(numErrors);
+        return numErrors;
     }
 }
